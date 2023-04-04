@@ -1,13 +1,14 @@
 package Tutorials;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Tutorial4 {
+    public static String firstCap(String s) {
+        return s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase();
+
+    }
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -33,10 +34,11 @@ public class Tutorial4 {
         String first = input.nextLine();
         String second = input.nextLine();
 
-        int index1 = swapColor.indexOf(first);
-        int index2 = swapColor.indexOf(second);
+        int index1 = swapColor.indexOf(firstCap(first));
+        int index2 = swapColor.indexOf(firstCap(second));
         Collections.swap(swapColor, index1, index2);
         System.out.print("After swapping : " + swapColor);
+        input.close();
 
     }
 

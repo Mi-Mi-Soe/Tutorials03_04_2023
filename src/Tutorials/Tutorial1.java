@@ -14,7 +14,7 @@ public class Tutorial1 {
             }
             System.out.println();
         }
-        for (int i = 7; i > 0; i--) {
+        for (int i = 6; i > 0; i--) {
             for (int j = i; j > 0; j--) {
                 System.out.print(" ");
             }

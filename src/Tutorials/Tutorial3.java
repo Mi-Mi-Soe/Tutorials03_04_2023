@@ -11,16 +11,16 @@ public class Tutorial3 {
         Scanner input = new Scanner(System.in);
 
         // Tutorial3(a)
-//        System.out.print("For ques(a) Enter the number of elements : ");
-//        int index=input.nextInt();
-//        int[] array=new int[index];
-//        System.out.println("Enter the numbers of array");
-//        int sum=0;
-//        for(int i=0;i<index;i++) {
-//            array[i]=input.nextInt();
-//            sum+=array[i];
-//        }
-//        System.out.println("Average number is : "+(double)sum/index);
+        System.out.print("For ques(a) Enter the number of elements : ");
+        int index = input.nextInt();
+        int[] array = new int[index];
+        System.out.println("Enter the numbers of array");
+        int sum = 0;
+        for (int i = 0; i < index; i++) {
+            array[i] = input.nextInt();
+            sum += array[i];
+        }
+        System.out.println("Average number is : " + (double) sum / index);
 
         // Tutorial3(b)
         System.out.print("For ques(b) Enter the number of elements : ");
@@ -48,12 +48,9 @@ public class Tutorial3 {
             }
             newArray[j++] = arrayList[i];
         }
-        if (search == false) {
-            System.out.println("Your number is not in this array. ");
-        } else {
-            System.out.print("The new array is : " + Arrays.toString(newArray));
 
-        }
+        System.out.println((search == false) ? "Your number is not in this array"
+                : "The new array is : " + Arrays.toString(newArray));
         // Tutorial3(c)
         ArrayList<String> blackpink = new ArrayList<String>();
         blackpink.add("Lisa");
@@ -65,6 +62,7 @@ public class Tutorial3 {
         for (String s : bp) {
             System.out.print(s + " ");
         }
+        input.close();
 
     }
 
